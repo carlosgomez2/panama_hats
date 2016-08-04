@@ -37,6 +37,13 @@ a
     font-weight: bold
     color: $white
 
+.search-btn
+  background-color: $primary
+  border-color: $primary
+  &:hover
+    background-color: darken($primary, $amount)
+    border-color: darken($primary, $amount)
+
 #spree-header .nav a
 #spree-header .nav a:hover,
 #spree-header .nav a:focus
@@ -48,7 +55,7 @@ a
 
 .landing-background
   border-radius: 6px
-  max-width: 1000px
+  max-width: 1150px
   margin: auto
   width: 100%
   height: 70vh
@@ -170,6 +177,10 @@ a
 .copy_ph
   float: right
 
+// checkout
+#summary-order-total
+  color: $cta
+  font-weight: 700
 
 [data-hook="homepage_products"]
   padding: $space_padding

@@ -70,10 +70,26 @@ Deface::Override.new(:virtual_path  => 'spree/layouts/spree_application',
             </div>
             <div class='col-md-4'>
               <h3>Redes Sociales</h3>
-              <p><%= link_to 'Facebook', 'https://facebook.com' %></p>
-              <p><%= link_to 'Twitter', 'https://twitter.com' %></p>
-              <p><%= link_to 'Pinterest', 'https://pinterest.com' %></p>
-              <p><%= link_to 'Instagram', 'https://instagram.com' %></p>
+              <p>
+                <%= link_to 'https://facebook.com' do%>
+                  <%= fa_icon 'facebook', text: 'Facebook' %>
+                <% end %>
+              </p>
+              <p>
+                <%= link_to 'https://twitter.com' do%>
+                  <%= fa_icon 'twitter', text: 'Twitter' %>
+                <% end %>
+              </p>
+              <p>
+                <%= link_to 'https://pinterest.com' do%>
+                  <%= fa_icon 'pinterest', text: 'Pinterest' %>
+                <% end %>
+              </p>
+              <p>
+                <%= link_to 'https://instagram.com' do%>
+                  <%= fa_icon 'instagram', text: 'Instagram' %>
+                <% end %>
+              </p>
             </div>
           </div>
           <div class='col-md-12 copy'>
