@@ -96,58 +96,12 @@ Deface::Override.new(:virtual_path  => 'spree/layouts/spree_application',
             <ul class='float-rigth footer_ul mid_with text-center'>
               <li>Trabaja con Nosotros</li>
               <li>Terminos y condiciones</li>
+              <%= link_to 'Terminos y Condiciones' do %>
+                <%= render :partial => 'spree/layouts/terms' %>
+              <% end %>
               <li>Politica de privacidad</li>
             </ul>
             <p class='mid_with text-center'> &copy; Derechos Reservados 2016 | Panama Hats Inc.</p>
           </div>
         <% end %>
         ")
-
-
-# Deface::Override.new(:virtual_path  => 'spree/layouts/spree_application',
-#         name: 'adding footer',
-#         insert_after: 'div.container',
-#         text: "
-#         <% if current_page?(root_path) %>
-#           <div id='footer' class='container'>
-#             <div class='col-md-4'>
-#               <h3>Ubicación</h3>
-#               <p>Reforma #222, Ciudad de México</p>
-#               <p>C.P. 50000</p>
-#               <p>Telefonos: (555) 123 5678</p>
-#             </div>
-#             <div class='col-md-4'>
-#               <h3>Conoce mas de PH</h3>
-#               <p>Nuestra historia</p>
-#               <p>Nuestro equipo</p>
-#             </div>
-#             <div class='col-md-4'>
-#               <h3>Redes Sociales</h3>
-#               <p><%= link_to 'Facebook', 'https://facebook.com' %></p>
-#               <p><%= link_to 'Twitter', 'https://twitter.com' %></p>
-#               <p><%= link_to 'Pinterest', 'https://pinterest.com' %></p>
-#               <p><%= link_to 'Instagram', 'https://instagram.com' %></p>
-#             </div>
-#           </div>
-#           <div class='col-md-12 text-center copy'>
-#             <p> &copy; Derechos Reservados 2016 | Panama Hats Inc.</p>
-#           </div>
-#         <% end %>
-#         ")
-#
-# Deface::Override.new(:virtual_path  => 'spree/layouts/spree_application',
-#         name: 'adding subscribe',
-#         insert_before: 'div#footer',
-#         text: "
-#         <% if current_page?(root_path) %>
-#           <section id='subscribe'>
-#             <div class='content-subscribe'>
-#               <p>Suscríbete para recibir lo último de Panama Hats Inc. </p>
-#               <form id='subscription_form' class='subscription_form'>
-#                 <input id='subscribe_email' placeholder='Tu email aquí' type='text'></input>
-#                 <input class='submit_subscribe' value='Suscríbirse' type='submit'></input>
-#               </form>
-#             </div>
-#           </section>
-#         <% end %>
-#         ")
